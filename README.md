@@ -32,6 +32,6 @@ column_distribution(df['categories'])
 
 which will plot the following chart:
 
-![Column Distribution Chart](images/example_column_distribution.png?raw=true "Column Distribution Chart")
+![Column Distribution Chart](https://raw.githubusercontent.com/ajaymaity/ajaymaity.github.io/master/Documents/eda-viz/example_column_distribution.png)
 
 Other charts are a WIP.

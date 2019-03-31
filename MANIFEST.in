@@ -1,2 +1,2 @@
 include requirements.txt
-include images/example_column_distribution.png
+include version-config.ini
