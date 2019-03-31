@@ -1,0 +1,2 @@
+class PandasSeriesError(Exception):
+    pass
