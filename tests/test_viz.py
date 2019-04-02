@@ -1,12 +1,10 @@
-# Doesn't contain proper tests yet
-import pandas as pd
+import pytest
+from eda_viz.viz import sum_ab
 
-from eda_viz.viz import column_distribution
 
-df = pd.DataFrame({
-    'col1': ['ajay', 'nikita', 'ajay', 'sonia', 'sumeet', 'nikita', 'ajay'],
-    'col2': [1, 2, 3, 4, 5, 6, 7]
-})
-
-if __name__ == '__main__':
-    column_distribution(df['col1'])
+@pytest.mark.parametrize('a, b, expected', [
+    (1, 2, 3),
+    (45, 22, 68)
+])
+def test_sum_ab(a, b, expected):
+    assert sum_ab(a, b) == expected
