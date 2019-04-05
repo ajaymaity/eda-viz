@@ -39,13 +39,10 @@ def column_distribution(column, title='Class Distribution', xlabel='Class',
     plt.show()
 
 
-def sum_ab(a, b):
-    return a + b
-
-
-if __name__ == '__main__':
-    df = pd.DataFrame({
-        'col1': ['ajay', 'nikita', 'ajay', 'sonia', 'sumeet', 'nikita', 'ajay'],
-        'col2': [1, 2, 3, 4, 5, 6, 7]
-    })
-    column_distribution(df['col1'])
+# if __name__ == '__main__':
+#     df = pd.DataFrame({
+#         'col1': ['ajay', 'nikita', 'ajay', 'sonia', 'sumeet',
+#                  'nikita', 'ajay'],
+#         'col2': [1, 2, 3, 4, 5, 6, 7]
+#     })
+#     column_distribution(df['col1'])
