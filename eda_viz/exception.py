@@ -1,2 +1,2 @@
-class PandasSeriesError(Exception):
+class TypeNotSupportedError(Exception):
     pass
