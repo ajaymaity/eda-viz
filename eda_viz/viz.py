@@ -85,16 +85,16 @@ def column_distribution(column, title='Class Distribution', xlabel='Class',
 #                                'plot.')
 
 
-if __name__ == '__main__':
-    df = pd.DataFrame({
-        'col1': ['ajay', 'nikita', 'ajay', 'sonia', 'sumeet',
-                 'nikita', 'ajay'],
-        'col2': [1, 2, 1, 4, 1, 2, 7],
-        'col3': [1, 'A', 1, 4, 1, 'B', 7],
-        'col4': [None] * 7,
-        'col5': ['A', None, 'A', 'C', 'D', 'B', None],
-        'col6': [1, 'A', {'a': 1}, 3, 4, 5, 6],
-        'col7': [[1, 3], 2, 1, 4, 1, 2, 7]
-    })
+# if __name__ == '__main__':
+#     df = pd.DataFrame({
+#         'col1': ['ajay', 'nikita', 'ajay', 'sonia', 'sumeet',
+#                  'nikita', 'ajay'],
+#         'col2': [1, 2, 1, 4, 1, 2, 7],
+#         'col3': [1, 'A', 1, 4, 1, 'B', 7],
+#         'col4': [None] * 7,
+#         'col5': ['A', None, 'A', 'C', 'D', 'B', None],
+#         'col6': [1, 'A', {'a': 1}, 3, 4, 5, 6],
+#         'col7': [[1, 3], 2, 1, 4, 1, 2, 7]
+#     })
     # column_distribution(df['col7'])
     # histogram(df['col1'])
