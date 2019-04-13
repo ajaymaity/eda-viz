@@ -34,7 +34,7 @@ setup(
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.6",
     ],
-    packages=["eda-viz"],
+    packages=["eda_viz"],
     include_package_data=True,
     install_requires=required
 )

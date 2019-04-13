@@ -1,4 +1,6 @@
 # EDA and Visualization Library
+[![Build Status](https://travis-ci.com/ajaymaity/eda-viz.svg?branch=master)](https://travis-ci.com/ajaymaity/eda-viz)
+
 Light-weight Python EDA and Visualization Library for Data Scientists.
 
 The `eda_viz` module is a light-weight library that will make your data 
