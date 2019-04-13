@@ -1,0 +1,19 @@
+sudo: false
+language: python
+python: 3.6
+branches:
+  only:
+  - master
+install:
+- pip install -r requirements-tests.txt
+- pip install -r requirements.txt
+script:
+- "./run_unit_tests.sh"
+- "./run_coverage_tests.sh"
+deploy:
+  provider: pypi
+  user: ajaymaity
+  password:
+    secure: kIxq6eF17WozuGIQyJb+m4MERl9S652guOakWLFbCu/wwWaybOZIcmKwYPC8ru+e3m378DNw6wiX9xfWtkgHMFngKzEBTD1X+IsS5ilrkCcofblYKB7cywJyvi+r6DWLD20sk2jTfuSoGYooSKwCnYmiauJxLUTLbTZgZzgWL8qqJkxbvXOjB9hHTgT+FaxPfmgYJfIt5SCnduvTbMjOGLtBwlTZYIQWFQ/QCiUr4X73I7moIQQPqqhktHnChAESwejqnXphyziaAR0NF4eDTyvr5W28Muqq8dfDhjtKeABekCpKesVnvJDu3wrz8QoDvc77PHV9MvhF3jJ8sW+MmMq7goPbK+j/F6/RiX7kpm4EV07AiNn6e6Xl8Rn3WELQ2X63IoSZAYeSNxO6eGK1luTelZWkrCgpZiBac5Oor1L5WfJ9XS9ch5Y84EHrRhQuM4d3I5WtXsAXGMh8EAhLS6oxonNt3n0ovpNEdq14sDUWBQk7Qy6CXeBMhuIn8sFqf1dDfEV42C15lCziHcVWp9Sf14R2JwytCjOG82EacF6gKKs5rUGbf+sCt/qUHnYn/IQQvEwMa62W3lzd8bud9TrHj5Q8uyNh11vfExvpgot/Nlu/NlG1QMvbV3XPOLEyxx7KogRMI8i/08Fa8dhw4K5SXJVuIDMk6DTS5LFibho=
+  on:
+    branch: master
