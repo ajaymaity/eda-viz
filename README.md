@@ -1,5 +1,6 @@
 # EDA and Visualization Library
 [![Build Status](https://travis-ci.com/ajaymaity/eda-viz.svg?branch=master)](https://travis-ci.com/ajaymaity/eda-viz)
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/ajaymaity/eda-viz/blob/master/LICENSE)
 
 Light-weight Python EDA and Visualization Library for Data Scientists.
 

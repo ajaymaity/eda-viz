@@ -10,6 +10,7 @@ install:
 script:
 - "./run_unit_tests.sh"
 - "./run_coverage_tests.sh"
+- "./run_code_quality_tests.sh"
 deploy:
   provider: pypi
   user: ajaymaity
