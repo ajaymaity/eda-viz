@@ -1,10 +1,16 @@
+"""Custom Exception module."""
+
+
 class TypeNotSupportedError(Exception):
-    pass
+    """Raised when a non-acceptable data is passed."""
+    pass  # pylint: disable=W0107
 
 
-class StringTypeNotSupportedError(TypeNotSupportedError):
-    pass
+class NonNumericTypeNotSupportedError(TypeNotSupportedError):
+    """Raised when a non-numeric data is passed."""
+    pass  # pylint: disable=W0107
 
 
 class InvalidDataError(Exception):
-    pass
+    """Raised when an invalid data is passed."""
+    pass  # pylint: disable=W0107
