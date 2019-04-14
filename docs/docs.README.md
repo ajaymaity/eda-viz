@@ -1,0 +1,3 @@
+- Add more documentation section by updating `source/index.rst`.
+- Run `./update_docs.sh` to update the documentation with your changes.
+- Open `build/html/index.html` in your favorite browser to view the documentation.
