@@ -162,10 +162,5 @@ def bar_plot(x, y, title='Bar Plot', xlabel='x-axis',
                                'plot.')
 
 
-if __name__ == '__main__':
-    # bar_plot(CATEGORICAL_LIST, DICTIONARY_LIST)
-    df = pd.DataFrame({
-        'categories': ['A', 'B', 'A', 'C', 'D', 'B', 'A'],
-        'numbers': [1, 2, 1, 3, 4, 2, 1]
-    })
-    bar_plot(df['categories'], df['numbers'])
+# if __name__ == '__main__':
+#     bar_plot(CATEGORICAL_LIST, DICTIONARY_LIST)
