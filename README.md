@@ -47,7 +47,7 @@ histogram(df['numbers'])
 
 ![Histogram](https://raw.githubusercontent.com/ajaymaity/eda-viz/master/images/example-histogram.png)
 
-### Histogram
+### Bar Plot
 
 ```buildoutcfg
 from eda_viz.viz import bar_plot
