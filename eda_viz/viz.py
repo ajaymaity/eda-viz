@@ -24,8 +24,7 @@ def column_distribution(column, title='Class Distribution', xlabel='Class',
     :param xlabel: label of x-axis (str)
     :param ylabel: label of y-axis (str)
     :return: None
-    :raise TypeNotSupportedError: if the column passed is one of pandas Series,
-    numpy ndarray or list
+    :raise TypeNotSupportedError: if the column passed is one of pandas Series, numpy ndarray or list
     :raise InvalidDataError: if the data cannot be displayed
     """
     if not isinstance(column, ACCEPTED_GENERIC_TYPES):
@@ -61,8 +60,8 @@ def histogram(column, title='Histogram', xlabel='Class Bins',
     :param xlabel: label of x-axis (str)
     :param ylabel: label of y-axis (str)
     :return: None
-    :raise TypeNotSupportedError: if the column passed is one of pandas Series,
-    numpy ndarray or list
+    :raise TypeNotSupportedError: if the column passed is one of pandas Series, numpy ndarray or list
+    :raise NonNumericTypeNotSupportedError: if the column passed is non-numeric
     :raise InvalidDataError: if the data cannot be displayed
     """
     if not isinstance(column, ACCEPTED_GENERIC_TYPES):
