@@ -17,7 +17,7 @@ from tests.test_data import CATEGORICAL_LIST, CATEGORICAL_NUMPY, \
     NUMPY_NAN, NUMPY_INF, EMPTY_LIST, ALL_NONE_LIST, RANDOM_TITLE, \
     RANDOM_XLABEL, RANDOM_YLABEL  # noqa: E402
 from eda_viz.viz import histogram  # noqa: E402
-from eda_viz.exception import InvalidDataError, \
+from eda_viz.exceptions import InvalidDataError, \
     NonNumericTypeNotSupportedError, TypeNotSupportedError  # noqa: E402
 
 

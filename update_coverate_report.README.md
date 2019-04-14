@@ -1,0 +1,4 @@
+- Add some tests in `tests/` directory.
+- Run `./run_coverage_tests.sh` to run the coverage tests to ensure enough tests are written. This returns the percentage of coverage.
+- To view exactly where the tests don't reach in the source code, you can run `./update_coverage_report.sh` to generate/update the HTML coverage report.
+- Open `htmlcov/index.html` in your favorite browser to view the coverage report. You can click on the file names to view the coverage in each file.
