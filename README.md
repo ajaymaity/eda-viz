@@ -7,8 +7,6 @@ Light-weight Python EDA and Visualization Library for Data Scientists.
 The `eda_viz` module is a light-weight library that will make your data 
 exploration and visualization tasks lot simpler.
 
-Currently, the library only supports Pandas DataFrame.
-
 ## Installation
 
 You can install `eda-viz` from PyPI:
@@ -21,20 +19,41 @@ The library is only tested in Python 3.6.5, and on Mac OS v10.13.6.
 
 ## How to use
 
-To plot `column_distribution`, you can use the following example:
+Let's create a sample dataframe:
 
 ```buildoutcfg
 import pandas as pd
-from eda_viz.viz import column_distribution
-
 df = pd.DataFrame({
-    'categories': ['A', 'A', 'B', 'C', 'A', 'B']
+    'categories': ['A', 'B', 'A', 'C', 'D', 'B', 'A'],
+    'numbers': [1, 2, 1, 3, 4, 2, 1]
 })
+```
+
+### Column Distribution
+
+```buildoutcfg
+from eda_viz.viz import column_distribution
 column_distribution(df['categories'])
 ```
 
-which will plot the following chart:
+![Column Distribution](https://raw.githubusercontent.com/ajaymaity/eda-viz/master/images/example-column-distribution.png)
 
-![Column Distribution Chart](https://raw.githubusercontent.com/ajaymaity/ajaymaity.github.io/master/Documents/eda-viz/example_column_distribution.png)
+### Histogram
+
+```buildoutcfg
+from eda_viz.viz import histogram
+histogram(df['numbers'])
+```
+
+![Histogram](https://raw.githubusercontent.com/ajaymaity/eda-viz/master/images/example-histogram.png)
+
+### Histogram
+
+```buildoutcfg
+from eda_viz.viz import bar_plot
+bar_plot(df['categories'], df['numbers'])
+```
+
+![Bar Plot](https://raw.githubusercontent.com/ajaymaity/eda-viz/master/images/example-bar-plot.png)
 
 Other charts are a WIP.

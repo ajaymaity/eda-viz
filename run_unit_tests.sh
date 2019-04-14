@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-python -m pytest
+pytest -p no:warnings

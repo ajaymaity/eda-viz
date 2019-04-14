@@ -17,7 +17,7 @@ from tests.test_data import CATEGORICAL_LIST, CATEGORICAL_NUMPY, \
     NUMPY_NAN, NUMPY_INF, EMPTY_LIST, ALL_NONE_LIST, RANDOM_TITLE, \
     RANDOM_XLABEL, RANDOM_YLABEL  # noqa: E402
 from eda_viz.viz import column_distribution  # noqa: E402
-from eda_viz.exception import InvalidDataError, \
+from eda_viz.exceptions import InvalidDataError, \
     TypeNotSupportedError  # noqa: E402
 
 
@@ -74,5 +74,20 @@ class TestColumnDistribution(object):
         assert mock_plt.title.call_args_list[0][0][0] == title
         assert mock_plt.xlabel.call_args_list[0][0][0] == xlabel
         assert mock_plt.ylabel.call_args_list[0][0][0] == ylabel
+        assert mock_plt.subplots.called
+        assert mock_plt.show.called
+
+    @mock.patch("eda_viz.viz.plt")
+    @pytest.mark.parametrize('column, sort', [
+        (CATEGORICAL_LIST, True),
+        (CATEGORICAL_LIST, False)
+    ])
+    def test_column_distribution_sort(self, mock_plt, column, sort):
+        """Test column_distribution() method with all parameters."""
+        column_distribution(column, sort=sort)
+
+        assert mock_plt.title.call_args_list[0][0][0] == 'Class Distribution'
+        assert mock_plt.xlabel.call_args_list[0][0][0] == 'Class'
+        assert mock_plt.ylabel.call_args_list[0][0][0] == 'Count'
         assert mock_plt.subplots.called
         assert mock_plt.show.called
